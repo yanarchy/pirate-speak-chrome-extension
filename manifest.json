@@ -15,7 +15,7 @@
     {
       "matches": ['<all_urls>'],
       "css": ["pirates/pirates.css"],
-      "js": ["pirates/pirates.js"]
+      "js": ["pirates/pirates.js", "lib/jquery.js"]
     }
   ],
 }
