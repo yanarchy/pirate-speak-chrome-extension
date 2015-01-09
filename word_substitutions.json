@@ -1,0 +1,23 @@
+var pirateWords = {
+  "bathroom" : "head",
+  "cool" : "shipshape",
+  "dollar" : "doubloon",
+  "dollars" : "doubloons",
+  "everyone" : "all hands",  
+  "fuck" : "shiver me timbers", 
+  "gun" : "bluderbuss",
+  "hello" : "ahoy",
+  "hey" : "ahoy",
+  "hi" : "ahoy",
+  "left" : "port",
+  "lol" : "blimey",
+  "my" : "me",
+  "no" : "nay",
+  "omg" : "shiver me timbers",
+  "right" : "starboard",
+  "rotf" : "rollin' on the decks",
+  "shit" : "shiver me timbers", 
+  "yes" : "aye aye",
+  "you" : "ye",
+  "yup" : "aye"
+}
