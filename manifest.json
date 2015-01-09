@@ -3,7 +3,8 @@
   "version": "1.0",
   "description": "Translate your webpages from English to PirateSpeak!",
   "browser_action": {
-    "default_icon": "ICON GOES HERE"
-    "popup": "pirates/pirates.html"
+    "default_icon": "ICON GOES HERE",
+    "popup": "pirates/pirates.html",
+    "background-page": "pirates/background.html"
   }
 }
