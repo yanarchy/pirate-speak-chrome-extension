@@ -13,6 +13,7 @@
   },
   "content_scripts": [{
       "matches": ["http://*.co.il/*"],
-      "js": ["pirates/pirates.js", "lib/jquery.js"]
+      "js": ["pirates/pirates.js", "lib/jquery.js"],
+      "run_at": "document_end"
     }]
 }
