@@ -12,6 +12,14 @@
     "background-page": "pirates/background.html"
   },
   "background": {
-    "scripts": ["pirates.js"]
-  }
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ['<all_urls>'],
+      "css": ["pirates/pirates.css"],
+      "js": ["pirates/pirates.js"]
+    }
+  ],
+
 }
