@@ -1,9 +1,10 @@
 {
+  "manifest_version": 2,
   "name": "PirateSpeak",
-  "version": "1.0",
+  "version": "0.1",
   "description": "Translate your webpages from English to PirateSpeak!",
   "browser_action": {
-    "default_icon": "icon.jpg",
+    "default_icon": "icon.png",
     "popup": "pirates/pirates.html",
     "background-page": "pirates/background.html"
   }
