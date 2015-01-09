@@ -9,6 +9,13 @@
 	 "128": "icon_128.png"
 	},
     "popup": "pirates/pirates.html",
-    "background-page": "pirates/background.html"
-  }
+    "background-page": "pirates/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ['<all_urls>'],
+      "css": ["pirates/pirates.css"],
+      "js": ["pirates/pirates.js"]
+    }
+  ],
 }
