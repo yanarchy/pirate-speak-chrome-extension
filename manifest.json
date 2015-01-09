@@ -7,5 +7,12 @@
     "default_icon": "icon.png",
     "popup": "pirates/pirates.html",
     "background-page": "pirates/background.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ['<all_urls>'],
+      "css": ["pirates.css"],
+      "js": ["pirates.js", "speak.js"]
+    }
+  ],
 }
