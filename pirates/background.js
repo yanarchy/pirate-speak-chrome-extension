@@ -1,5 +1,5 @@
 function fetch_feed(url, callback) {
-        var xhr = new XMLHttpRequest();
+  var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(data) {
       if (xhr.readyState == 4) {
         if (xhr.status == 200) {
@@ -10,8 +10,8 @@ function fetch_feed(url, callback) {
         }
       }
     }
-    // Note that any URL fetched here must be matched by a permission in
-    // the manifest.json file!
-    xhr.open('GET', url, true);
-    xhr.send();
+  // Note that any URL fetched here must be matched by a 
+  // permission in the manifest.json file!
+  xhr.open('GET', url, true);
+  xhr.send();
 }
