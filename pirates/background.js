@@ -1,3 +1,14 @@
+chrome.webRequest.onCompleted.addListener( function( details ) {
+  chrome.tabs.getSelected( null, function( tab ) {
+    chrome.tabs.sendRequest( tab.id, {}, function(){} );
+  } );
+}, {
+  urls: [
+    "http://*/*"
+  ]
+});
+
+
 function fetch_feed(url, callback) {
   var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(data) {

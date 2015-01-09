@@ -25,18 +25,18 @@ var pirateWords = {
   "are" : 'arrrr'
 }
 
-$(document).ready(function(){
-  $('*').each(function(index, element){
-    var $el = $(element);
-    var words = $el.text().split('');
-    $el.html('');
-    for(var i = 0; i<words.length; i++){
-    	var word = words[i];
-    	//pass each string through function that checks and replaces
-        //if nothing is found, leave.
-        $el.append(translate(word));
-    }
-  })
+chrome.extension.onRequest.addListener( function () {
+	$('*').each(function(index, element){
+		var $el = $(element);
+		var words = $el.text().split('');
+		$el.html('');
+		for(var i = 0; i<words.length; i++){
+			var word = words[i];
+			//pass each string through function that checks and replaces
+		    //if nothing is found, leave.
+		    $el.append(translate(word));
+		}
+	})
 //pirateWords = object of pirate words and translations
   var translate = function(string){
   	for(var j in pirateWords){
@@ -48,4 +48,5 @@ $(document).ready(function(){
   		}
   	}
   }
-});
+} );
+

@@ -12,7 +12,7 @@
     "background-page": "pirates/background.js"
   },
   "content_scripts": [{
-      "matches": ["http://*.co.il/*"],
+      "matches": ["http://*/*"],
       "js": ["pirates/pirates.js", "lib/jquery.js"],
       "run_at": "document_end"
     }]
